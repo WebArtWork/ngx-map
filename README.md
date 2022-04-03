@@ -4,9 +4,9 @@
 ```
 npm i --save @agm/core@1.1.0
 ```
-## In termianl /your_project/client install chat module:
+## In termianl /your_project/client install map module:
 ```
-waw add ngx-chat
+waw add ngx-map
 ```
 ## In your_project/client/src/environments/enviroment.ts and environment.prod.ts
 in const environment={
