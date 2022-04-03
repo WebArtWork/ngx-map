@@ -40,7 +40,13 @@ replace property google_maps on your your_property
 	],
   ```
   
+## In your_project/client/src/app/modules/map/map.component.scss
+use your scss property ^_^
+```
+agm-map{
 
+}
+```
 ## Your_page.module.ts
 import map module to your page
 ```
