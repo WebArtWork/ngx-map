@@ -1,11 +1,11 @@
 # ngx-map
 
-## In termianl /your_project/client instal agm:
+## In termianl /your_project/client install agm:
 1.
 ```
 npm i --save @agm/core@1.1.0
 ```
-## In termianl /your_project/client instal chat module:
+## In termianl /your_project/client install chat module:
 ```
 waw add ngx-chat
 ```
