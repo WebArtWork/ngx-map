@@ -1,7 +1,6 @@
 # ngx-map
 
 ## In termianl /your_project/client install agm:
-1.
 ```
 npm i --save @agm/core@1.1.0
 ```
@@ -9,7 +8,6 @@ npm i --save @agm/core@1.1.0
 ```
 waw add ngx-chat
 ```
-
 ## In your_project/client/src/environments/enviroment.ts and environment.prod.ts
 in const environment={
 create property : " use your google map key " }
