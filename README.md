@@ -13,7 +13,7 @@ in const environment={
 create property : " use your google map key " }
 
 ```
-google_maps: 'AIzaSyDe3bGIpUWpz38S5UzfO76PETAmYh2uJ2w'
+google_maps:
 
 ```
 ```
