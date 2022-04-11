@@ -1,0 +1,5 @@
+<agm-map [latitude]="20" [longitude]="55" (mapClick)="clickMap($event.coords)" >
+    <agm-marker (markerClick)="marker.click && marker.click(marker);" *ngFor="let marker of markers" [latitude]="marker.lat" [longitude]="marker.lng" [iconUrl]="marker.icon && { url:marker.icon, scaledSize: { width: marker.icon_width||30, height: marker.icon_height||30 }} || {}">
+    </agm-marker>
+    <agm-marker *ngIf="select && lat" [latitude]="lat" [longitude]="lng" ></agm-marker>
+</agm-map>
