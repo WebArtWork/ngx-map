@@ -55,11 +55,11 @@ marker_width
 icon_width: 50    (your option in px)
 ```
 ## Your_page.component.ts
-'''
+```
 	map_clicked(coords){
 		console.log(coords);		
 	}
-'''
+```
 if you need static marker
 ```
 	public lat: number = 50.673858;
