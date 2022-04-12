@@ -11,24 +11,11 @@ waw add ngx-map
 ## In your_project/client/src/environments/enviroment.ts and environment.prod.ts
 in const environment={
 create property : " use your google map key " }
-
-```
-google_maps:
-```
 ```
 your_property: 'your_google_map_key'
 ```
 ## In your_project/client/src/app/modules/map/map.module.ts
 replace property google_maps on your your_property
-
-```
-@NgModule({
-	imports: [
-		AgmCoreModule.forRoot({
-			apiKey: environment.google_maps
-		  }),
-	],
-  ```
   ```
 @NgModule({
 	imports: [
@@ -57,5 +44,24 @@ import { MapModule } from 'src/app/modules';
 ## Your_page.component.html
 for use this module use tag ```<wmap></wmap> ```
 ```
-<wmap [markers]="[{lat: 50, lng: 50}]"></wmap>
+<wmap (mapClick)="$event.coords" [markers]="[ {lat:lat, lng:lng, icon: 'assets/logo.png', icon_width: 50, click: clicked}]" [select]="true" (map_clicked)="map_clicked($event)"></wmap>
+```
+merker icon
+```
+icon: 'path to your file',
+```
+marker_width
+```
+icon_width: 50    (your option in px)
+```
+## Your_page.component.ts
+if you need static marker
+```
+	public lat: number = 50.673858;
+	public lng: number = 7.815982;
+```
+if you need click on your marker
+```
+clicked(marker){		
+	}
 ```
